@@ -1,0 +1,38 @@
+
+#bottom-text {
+    background-color: #000;
+    color: green;
+    font-family: 'Consolas', 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#console {
+    background-color: #111;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    width:95%;
+    height:95%;
+    overflow-y:scroll;
+}
+
+.console-input {
+    outline: none;
+    border: none;
+    background: none;
+    color: #0f0;
+    display: inline;
+    min-width: 10px; /* Ensures space for caret when empty */
+}
+
+.caret {
+    display: inline;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
